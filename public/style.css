@@ -240,10 +240,14 @@ html {
 
 .slick-prev:before {
     content: '←';
+    font-size:15px;
+    background-color: cyan;
 }
 
 [dir='rtl'] .slick-prev:before {
     content: '→';
+    font-size:15px;
+    background-color: cyan;
 }
 
 .slick-next {
