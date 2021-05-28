@@ -241,14 +241,16 @@ html {
 .slick-prev:before {
     content: '←';
     font-size:15px;
-    background-color: blue;
+    background-color: skyblue;
     padding: 5px ;
+    color: white;
 }
 
 [dir='rtl'] .slick-prev:before {
     content: '→';
     font-size:15px;
-    background-color: blue;
+    background-color: skyblue;
+    color: white;
     padding: 5px;
 }
 
@@ -263,14 +265,16 @@ html {
 
 .slick-next:before {
     content: '→';
-    background-color: blue;
+    background-color: skyblue;
     padding: 5px;
+    color: white;
 }
 
 [dir='rtl'] .slick-next:before {
     content: '←';
-    background-color: blue;
+    background-color: skyblue;
     padding: 5px;
+    color: white;
 }
 
 
