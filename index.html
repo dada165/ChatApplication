@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" class="bg-secondary" style="background-image: url('https://www.comevo.com/wp-content/uploads/2019/04/iStock-953782406.jpg');">
+    <br><br>
+    <br><br>
+    <div class="ui my-container">
+        <div class="ui stackable four column grid">
+            <div class="three wide column">
+                <div class="ui card online-list">
+                    <div class="content">
+                        <p class="item center aligned header">Online : <span class="count"></span> </p>
+                        <hr>
+                        <div class="ui relaxed divided list ">
+                            <div class="item online-users">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three wide column">
+                <div class="ui card activities">
+                    <div class="content">
+                        <p class="item center aligned header"> Activities</p>
+                        <hr>
+                        <div class="ui list">
+                            <div class="item my-activities">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ten wide column ">
+                <div class="ui card msg-card fluid ">
+                    <div class="ui segment my-container" style="min-height: 300px">
+                        <div class="ui active dimmer" id="loader">
+                            <div class="ui medium text loader"><br> YOUR MESSAGES ARE LOADING . . .</div>
+                        </div>
+                        <div class="item-slider">
+
+                        </div>
+                        <br><br><br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register Form -->
+
+    <div class="ui tiny modal bg-transparent" id="register" style="height: 32rem;">
+        <br>
+        <img src="https://p.kindpng.com/picc/s/121-1217791_jpg-black-and-white-download-social-logo-character.png" alt="" style="width: 10vmax;margin-left: 14rem;" class="border rounded-circle border-dark">
+        <div class=" scrolling content bg-transparent">
+            <div class="card bg-transparent">
+
+                <div class="username Form ui form content bg-transparent">
+                    <br>
+                    <h2 class="des text-center">Enter Username</h2>
+                    <div class="field reg-form">
+                        <input type="text" class="border rounded-pill" id="Myusername" placeholder="Enter your username to start" style="width: 22rem;margin-left: 6.5rem;">
+                    </div>
+                    <br>
+                    <center>
+                        <button class="ui reg-btn blue button">
+                            <i class="icon user"></i>
+                            Proceed
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inbox template groupclass">
+        <div class="chatApp">
+            <div class="ui top  inverted blue chatHeader   segment">
+                <button class="circular basic inverted ui icon mini button">
+                    <i class="icon users "></i>
+                </button>
+                <span class="ui  header ">Group Chat <br> </span>
+            </div>
+            <div class="messgeLists" id="groupchat-msg">
+            </div>
+            <p class="typing-note"></p>
+            <div class=" ui blue fluid action  blue input form-area ">
+                <input type="text" class="ui blue message-input message-gc" message="groupmsg" placeholder="your message here...">
+                <div class="ui labeled button sendMe" receiver="receiver_gc">
+                    <div class="ui blue button">
+                        <i class="send icon"></i> Send
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="chat.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
